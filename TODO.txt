@@ -8,3 +8,8 @@ Hallar magnitud "sqrt(pow(x)+pow(y)+pow(z))" en:
 Hallar media aritmética, desviacion estandar, cuadrados medios, zero crossing rate
 
 ID,ritmo, accuracy, magnitud, time, promedio
+
+Know how
+1 - Leer el directorio buscando nombre de persona
+2 - Luego entrar y leer carpeta con nombre de accion
+3 - 

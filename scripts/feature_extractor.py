@@ -27,5 +27,4 @@ def read():
             while line:
                 line = file.readline()
                 print(line)
-                break
 read()

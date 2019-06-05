@@ -23,25 +23,23 @@ def read():
 
             if len(tokens1) > 1:
                 tokens1.remove(tokens1[0])
-                folderName = ' '.join(
-                tokens1)[0].upper() + ' '.join(tokens1)[1:]
+                folderName = '_'.join(tokens1)
             elif len(tokens2) > 1:
                 tokens2.remove(tokens2[0])
-                folderName = ' '.join(
-                tokens2)[0].upper() + ' '.join(tokens2)[1:]
+                folderName = '_'.join(tokens2)
 
             if not os.path.isdir(str(folderName)):
                 os.mkdir(str(folderName))
-            if not os.path.isdir(str(folderName)+"/Sesion I"):
-                os.mkdir(str(folderName)+"/Sesion I")
-            if not os.path.isdir(str(folderName)+"/Sesion II"):
-                os.mkdir(str(folderName)+"/Sesion II")
-            if not os.path.isdir(str(folderName)+"/Sesion III"):
-                os.mkdir(str(folderName)+"/Sesion III")
-            if not os.path.isdir(str(folderName)+"/Sesion IV"):
-                os.mkdir(str(folderName)+"/Sesion IV")
-            if not os.path.isdir(str(folderName)+"/Sesion V"):
-                os.mkdir(str(folderName)+"/Sesion V")
+            if not os.path.isdir(str(folderName)+"/sesion_1"):
+                os.mkdir(str(folderName)+"/sesion_1")
+            if not os.path.isdir(str(folderName)+"/sesion_2"):
+                os.mkdir(str(folderName)+"/sesion_2")
+            if not os.path.isdir(str(folderName)+"/sesion_3"):
+                os.mkdir(str(folderName)+"/sesion_3")
+            if not os.path.isdir(str(folderName)+"/sesion_4"):
+                os.mkdir(str(folderName)+"/sesion_4")
+            if not os.path.isdir(str(folderName)+"/sesion_5"):
+                os.mkdir(str(folderName)+"/sesion_5")
 
             fileHandle = open(f, "r")
             lineList = fileHandle.readlines()
@@ -56,16 +54,11 @@ def read():
             segment5 = segment1 * 5
 
             file = open(f, 'r')
-            file1 = open(str(folderName)+"/"+str("Sesion I") +
-                         "/"+str(w_ext[0])+" - 1.csv", 'w')
-            file2 = open(str(folderName)+"/"+str("Sesion II") +
-                         "/"+str(w_ext[0])+" - 2.csv", 'w')
-            file3 = open(str(folderName)+"/"+str("Sesion III") +
-                         "/"+str(w_ext[0])+" - 3.csv", 'w')
-            file4 = open(str(folderName)+"/"+str("Sesion IV") +
-                         "/"+str(w_ext[0])+" - 4.csv", 'w')
-            file5 = open(str(folderName)+"/"+str("Sesion V") +
-                         "/"+str(w_ext[0])+" - 5.csv", 'w')
+            file1 = open(str(folderName)+"/"+str("sesion_1") + "/"+str(w_ext[0])+" - 1.csv", 'w')
+            file2 = open(str(folderName)+"/"+str("sesion_2") + "/"+str(w_ext[0])+" - 2.csv", 'w')
+            file3 = open(str(folderName)+"/"+str("sesion_3") + "/"+str(w_ext[0])+" - 3.csv", 'w')
+            file4 = open(str(folderName)+"/"+str("sesion_4") + "/"+str(w_ext[0])+" - 4.csv", 'w')
+            file5 = open(str(folderName)+"/"+str("sesion_5") + "/"+str(w_ext[0])+" - 5.csv", 'w')
 
             # Heading
             file1.write("ID,rate,accuracy,magnitude,timestamp,average\n")
