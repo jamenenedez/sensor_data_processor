@@ -1,0 +1,10 @@
+Tomar las lecturas de acelerometria de:
+    Sensor inercial 1 (85 pantorilla izq) 
+    Movil
+    Smartwatch
+Hallar magnitud "sqrt(pow(x)+pow(y)+pow(z))" en:
+    las lecturas de los sensores inerciales 
+    las lecturas del Movil
+Hallar media aritmética, desviacion estandar, cuadrados medios, zero crossing rate
+
+ID,ritmo, accuracy, magnitud, time, promedio
