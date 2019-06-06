@@ -9,9 +9,10 @@ def zero_crossing_rate(data):
 def read():
     import os
     import sys
+    import math
     from os import listdir
     arguments = sys.argv
-    dir = "."
+    dir = "."   
 
     if not arguments[1]:
         sys.exit('Error in path')
@@ -24,7 +25,10 @@ def read():
              # Open & creation of files
             file = open(os.path.join(dir, f), 'r')
             line = file.readline()
+            
             while line:
-                line = file.readline()
-                print(line)
+                line = file.readline()                
+                words = line.split(",")
+                
+               #magnitude = round(math.sqrt(pow(float(words[1]), 2) + pow(float(words[2]), 2) + pow(float(words[3]), 2)), 3)                
 read()

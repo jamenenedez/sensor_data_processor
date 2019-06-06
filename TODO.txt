@@ -10,6 +10,12 @@ Hallar media aritmética, desviacion estandar, cuadrados medios, zero crossing r
 ID,ritmo, accuracy, magnitud, time, promedio
 
 Know how
-1 - Leer el directorio buscando nombre de persona
-2 - Luego entrar y leer carpeta con nombre de accion
-3 - 
+1 - Abrir en modo escritura un fichero llamado "features.csv" 
+2 - Leer directorio de lecturas
+3 - Por cada dispositivo encontrado leer sus acciones
+4 - Por cada accion procesar los ficheros
+    - Si el sensor es Movil o Smartwatch hacer media aritmética, desviacion estandar, cuadrados medios, zero crossing rate
+    - Si el sensor es Inercial hallar magnitud y a esta medida hallarle media aritmética, desviacion estandar, cuadrados medios, zero crossing rate
+    Nota: El formato del fichero tiene que ser:        
+    arithmetic average, standard deviation, mean squares, zero crossing rate, class(nombre de la accion en minuscula)
+3 - Luego subir el nivel de directorio y fucionar los tres ficheros en uno que se llame features.csv
