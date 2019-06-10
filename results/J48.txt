@@ -1,0 +1,135 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.misc.InputMappedClassifier -I -trim -W weka.classifiers.trees.J48 -- -C 0.25 -M 2
+Relation:     training
+Instances:    70
+Attributes:   4
+              arithmetic_average
+              standard_deviation
+              mean_squares
+              class
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+InputMappedClassifier:
+
+J48 pruned tree
+------------------
+
+arithmetic_average = 5,277852231: bajando_escaleras (1.0)
+arithmetic_average = 46,6250887155: bajando_escaleras (1.0)
+arithmetic_average = 22,7663775372: bajando_escaleras (1.0)
+arithmetic_average = 23,5767973128: bajando_escaleras (1.0)
+arithmetic_average = 7,9974012536: bajando_escaleras (1.0)
+arithmetic_average = 18,7811968024: bajando_escaleras (1.0)
+arithmetic_average = 15,010193171: bajando_escaleras (1.0)
+arithmetic_average = 19,661413019: bajando_escaleras (1.0)
+arithmetic_average = 1,0943055121: bajando_escaleras (2.0)
+arithmetic_average = 1,2130289855: bajando_escaleras (1.0)
+arithmetic_average = 1,1588628171: bajando_escaleras (2.0)
+arithmetic_average = 1,1531333333: bajando_escaleras (1.0)
+arithmetic_average = 1,0958469734: bajando_escaleras (1.0)
+arithmetic_average = 7,7097861883: bajando_pendiente (1.0)
+arithmetic_average = 2,3675760125: bajando_pendiente (1.0)
+arithmetic_average = 9,3372842184: bajando_pendiente (1.0)
+arithmetic_average = 1,2396237202: bajando_pendiente (1.0)
+arithmetic_average = 11,7720291566: bajando_pendiente (1.0)
+arithmetic_average = 18,021159794: bajando_pendiente (1.0)
+arithmetic_average = 16,7410156995: bajando_pendiente (1.0)
+arithmetic_average = 7,0524451045: bajando_pendiente (1.0)
+arithmetic_average = 24,4217209603: bajando_pendiente (1.0)
+arithmetic_average = 18,0862002072: bajando_pendiente (1.0)
+arithmetic_average = 17,0193574399: bajando_pendiente (1.0)
+arithmetic_average = 1,194802302: bajando_pendiente (2.0)
+arithmetic_average = 1,3439501078: bajando_pendiente (1.0)
+arithmetic_average = 1,3687687586: bajando_pendiente (2.0)
+arithmetic_average = 1,2000388842: bajando_pendiente (1.0)
+arithmetic_average = 1,1981159465: bajando_pendiente (1.0)
+arithmetic_average = 5,4790088952: caminando (1.0)
+arithmetic_average = 3,7195840857: caminando (1.0)
+arithmetic_average = 4,4664018794: caminando (1.0)
+arithmetic_average = 5,3540421472: caminando (1.0)
+arithmetic_average = 1,2723627719: caminando (1.0)
+arithmetic_average = 4,0974134015: caminando (1.0)
+arithmetic_average = 4,7582737013: caminando (1.0)
+arithmetic_average = 6,7910870257: caminando (1.0)
+arithmetic_average = 10,0389590487: caminando (1.0)
+arithmetic_average = 5,9958346967: caminando (1.0)
+arithmetic_average = 6,5312001669: caminando (1.0)
+arithmetic_average = 5,8941544884: caminando (1.0)
+arithmetic_average = 5,3297202738: caminando (1.0)
+arithmetic_average = 6,0226523099: caminando (1.0)
+arithmetic_average = 1,110576097: caminando (1.0)
+arithmetic_average = 1,1908932932: caminando (1.0)
+arithmetic_average = 1,1111943841: caminando (1.0)
+arithmetic_average = 1,1483330127: caminando (1.0)
+arithmetic_average = 6,5471960152: subiendo_escaleras (1.0)
+arithmetic_average = 4,1441804241: subiendo_escaleras (1.0)
+arithmetic_average = 16,9146146024: subiendo_escaleras (1.0)
+arithmetic_average = 12,6386175679: subiendo_escaleras (1.0)
+arithmetic_average = 8,9185699635: subiendo_escaleras (1.0)
+arithmetic_average = 14,0595653684: subiendo_escaleras (1.0)
+arithmetic_average = 4,6372508102: subiendo_escaleras (1.0)
+arithmetic_average = 18,5703024127: subiendo_escaleras (1.0)
+arithmetic_average = 20,9246963705: subiendo_escaleras (1.0)
+arithmetic_average = 1,0829602845: subiendo_escaleras (2.0)
+arithmetic_average = 1,0891337731: subiendo_escaleras (1.0)
+arithmetic_average = 4,1861235166: subiendo_pendiente (1.0)
+arithmetic_average = 5,7964373937: subiendo_pendiente (1.0)
+arithmetic_average = 3,1491174513: subiendo_pendiente (1.0)
+arithmetic_average = 5,8305006019: subiendo_pendiente (1.0)
+arithmetic_average = 1,0877033965: subiendo_pendiente (1.0)
+arithmetic_average = 12,1362801685: subiendo_pendiente (1.0)
+arithmetic_average = 17,6847400634: subiendo_pendiente (1.0)
+
+Number of Leaves  : 	65
+
+Size of the tree : 	66
+
+Attribute mappings:
+
+Model attributes              	    Incoming attributes
+------------------------------	    ----------------
+(nominal) arithmetic_average  	--> 1 (nominal) arithmetic_average
+(nominal) standard_deviation  	--> 2 (nominal) standard_deviation
+(nominal) mean_squares        	--> 3 (nominal) mean_squares
+(nominal) class               	--> 4 (nominal) class
+
+
+Time taken to build model: 0.03 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0.01 seconds
+
+=== Summary ===
+
+Correctly Classified Instances          56               80      %
+Incorrectly Classified Instances        14               20      %
+Kappa statistic                          0.7488
+Mean absolute error                      0.0692
+Root mean squared error                  0.1947
+Relative absolute error                 21.6224 %
+Root relative squared error             48.2057 %
+Total Number of Instances               70     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,933    0,000    1,000      0,933    0,966      0,957    0,992     0,969     bajando_escaleras
+                 1,000    0,255    0,517      1,000    0,682      0,621    1,000     1,000     bajando_pendiente
+                 0,923    0,000    1,000      0,923    0,960      0,952    0,991     0,962     caminando
+                 0,750    0,000    1,000      0,750    0,857      0,844    0,976     0,880     subiendo_escaleras
+                 0,400    0,000    1,000      0,400    0,571      0,586    0,973     0,850     subiendo_pendiente
+Weighted Avg.    0,800    0,055    0,897      0,800    0,801      0,786    0,987     0,934     
+
+=== Confusion Matrix ===
+
+  a  b  c  d  e   <-- classified as
+ 14  1  0  0  0 |  a = bajando_escaleras
+  0 15  0  0  0 |  b = bajando_pendiente
+  0  1 12  0  0 |  c = caminando
+  0  3  0  9  0 |  d = subiendo_escaleras
+  0  9  0  0  6 |  e = subiendo_pendiente
+
