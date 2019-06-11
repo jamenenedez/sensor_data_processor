@@ -1,0 +1,98 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     descriptor
+Instances:    105
+Attributes:   4
+              arithmetic_average
+              standard_deviation
+              mean_squares
+              class
+Test mode:    2-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+arithmetic_average <= 1.095847
+|   standard_deviation <= 0.374846
+|   |   standard_deviation <= 0.28957: subiendo_escaleras (2.0/1.0)
+|   |   standard_deviation > 0.28957: bajando_escaleras (4.0)
+|   standard_deviation > 0.374846: subiendo_escaleras (5.0)
+arithmetic_average > 1.095847
+|   arithmetic_average <= 6.791087
+|   |   standard_deviation <= 1.259356
+|   |   |   standard_deviation <= 0.485123
+|   |   |   |   mean_squares <= 1.198762: caminando (5.0)
+|   |   |   |   mean_squares > 1.198762
+|   |   |   |   |   arithmetic_average <= 1.188419
+|   |   |   |   |   |   mean_squares <= 1.217388: subiendo_pendiente (4.0)
+|   |   |   |   |   |   mean_squares > 1.217388: bajando_escaleras (4.0/1.0)
+|   |   |   |   |   arithmetic_average > 1.188419
+|   |   |   |   |   |   arithmetic_average <= 1.213029: caminando (2.0)
+|   |   |   |   |   |   arithmetic_average > 1.213029: subiendo_pendiente (3.0/1.0)
+|   |   |   standard_deviation > 0.485123
+|   |   |   |   arithmetic_average <= 1.173697: subiendo_escaleras (2.0)
+|   |   |   |   arithmetic_average > 1.173697: bajando_pendiente (9.0/1.0)
+|   |   standard_deviation > 1.259356
+|   |   |   standard_deviation <= 7.431096
+|   |   |   |   arithmetic_average <= 5.479009: caminando (16.0/9.0)
+|   |   |   |   arithmetic_average > 5.479009
+|   |   |   |   |   standard_deviation <= 2.730316: bajando_escaleras (2.0/1.0)
+|   |   |   |   |   standard_deviation > 2.730316: subiendo_pendiente (4.0/1.0)
+|   |   |   standard_deviation > 7.431096: caminando (6.0)
+|   arithmetic_average > 6.791087
+|   |   arithmetic_average <= 18.0862
+|   |   |   standard_deviation <= 15.228972: bajando_pendiente (17.0/9.0)
+|   |   |   standard_deviation > 15.228972
+|   |   |   |   arithmetic_average <= 16.349627
+|   |   |   |   |   arithmetic_average <= 14.059565
+|   |   |   |   |   |   arithmetic_average <= 12.13628: subiendo_pendiente (2.0)
+|   |   |   |   |   |   arithmetic_average > 12.13628: subiendo_escaleras (2.0)
+|   |   |   |   |   arithmetic_average > 14.059565: subiendo_pendiente (3.0)
+|   |   |   |   arithmetic_average > 16.349627: bajando_pendiente (5.0/2.0)
+|   |   arithmetic_average > 18.0862
+|   |   |   arithmetic_average <= 20.924696
+|   |   |   |   standard_deviation <= 20.143169: bajando_escaleras (2.0)
+|   |   |   |   standard_deviation > 20.143169: subiendo_escaleras (2.0)
+|   |   |   arithmetic_average > 20.924696: bajando_escaleras (4.0/1.0)
+
+Number of Leaves  : 	22
+
+Size of the tree : 	43
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances          44               41.9048 %
+Incorrectly Classified Instances        61               58.0952 %
+Kappa statistic                          0.2738
+Mean absolute error                      0.2478
+Root mean squared error                  0.4348
+Relative absolute error                 77.402  %
+Root relative squared error            108.6248 %
+Total Number of Instances              105     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,238    0,143    0,294      0,238    0,263      0,103    0,490     0,251     bajando_escaleras
+                 0,762    0,202    0,485      0,762    0,593      0,482    0,827     0,442     bajando_pendiente
+                 0,381    0,119    0,444      0,381    0,410      0,278    0,701     0,423     caminando
+                 0,286    0,143    0,333      0,286    0,308      0,152    0,563     0,337     subiendo_escaleras
+                 0,429    0,119    0,474      0,429    0,450      0,322    0,668     0,362     subiendo_pendiente
+Weighted Avg.    0,419    0,145    0,406      0,419    0,405      0,267    0,650     0,363     
+
+=== Confusion Matrix ===
+
+  a  b  c  d  e   <-- classified as
+  5  6  2  4  4 |  a = bajando_escaleras
+  2 16  0  2  1 |  b = bajando_pendiente
+  4  4  8  3  2 |  c = caminando
+  4  4  4  6  3 |  d = subiendo_escaleras
+  2  3  4  3  9 |  e = subiendo_pendiente
+

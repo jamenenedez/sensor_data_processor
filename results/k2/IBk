@@ -1,0 +1,51 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.lazy.IBk -K 1 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+Relation:     descriptor
+Instances:    105
+Attributes:   4
+              arithmetic_average
+              standard_deviation
+              mean_squares
+              class
+Test mode:    2-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+IB1 instance-based classifier
+using 1 nearest neighbour(s) for classification
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances          45               42.8571 %
+Incorrectly Classified Instances        60               57.1429 %
+Kappa statistic                          0.2857
+Mean absolute error                      0.2366
+Root mean squared error                  0.4583
+Relative absolute error                 73.8852 %
+Root relative squared error            114.4944 %
+Total Number of Instances              105     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,143    0,143    0,200      0,143    0,167      0,000    0,492     0,195     bajando_escaleras
+                 0,571    0,119    0,545      0,571    0,558      0,445    0,762     0,445     bajando_pendiente
+                 0,524    0,083    0,611      0,524    0,564      0,467    0,724     0,434     caminando
+                 0,333    0,155    0,350      0,333    0,341      0,182    0,598     0,264     subiendo_escaleras
+                 0,571    0,214    0,400      0,571    0,471      0,316    0,658     0,320     subiendo_pendiente
+Weighted Avg.    0,429    0,143    0,421      0,429    0,420      0,282    0,647     0,332     
+
+=== Confusion Matrix ===
+
+  a  b  c  d  e   <-- classified as
+  3  5  0  6  7 |  a = bajando_escaleras
+  2 12  1  2  4 |  b = bajando_pendiente
+  1  3 11  3  3 |  c = caminando
+  5  1  4  7  4 |  d = subiendo_escaleras
+  4  1  2  2 12 |  e = subiendo_pendiente
+

@@ -1,0 +1,73 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.NaiveBayes 
+Relation:     descriptor
+Instances:    105
+Attributes:   4
+              arithmetic_average
+              standard_deviation
+              mean_squares
+              class
+Test mode:    2-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Naive Bayes Classifier
+
+                                  Class
+Attribute             bajando_escaleras  bajando_pendiente          caminando subiendo_escaleras subiendo_pendiente
+                                  (0.2)              (0.2)              (0.2)              (0.2)              (0.2)
+====================================================================================================================
+arithmetic_average
+  mean                            9.3691              7.903             3.9401             6.6202             6.5515
+  std. dev.                      11.2265             7.0693             2.5868             6.3193             5.6364
+  weight sum                          21                 21                 21                 21                 21
+  precision                       0.4811             0.4811             0.4811             0.4811             0.4811
+
+standard_deviation
+  mean                            9.8931             8.0672              4.847             7.0049             7.4033
+  std. dev.                      16.3183            10.2068             5.1926             8.4115             8.6636
+  weight sum                          21                 21                 21                 21                 21
+  precision                       0.6972             0.6972             0.6972             0.6972             0.6972
+
+mean_squares
+  mean                           13.7324             11.635             6.5298             9.6562            10.0124
+  std. dev.                      19.3694            11.8866             5.4845            10.1994            10.0663
+  weight sum                          21                 21                 21                 21                 21
+  precision                       0.8311             0.8311             0.8311             0.8311             0.8311
+
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances          21               20      %
+Incorrectly Classified Instances        84               80      %
+Kappa statistic                          0     
+Mean absolute error                      0.3179
+Root mean squared error                  0.4497
+Relative absolute error                 99.3063 %
+Root relative squared error            112.3361 %
+Total Number of Instances              105     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,095    0,095    0,200      0,095    0,129      0,000    0,403     0,189     bajando_escaleras
+                 0,048    0,095    0,111      0,048    0,067      -0,068   0,506     0,220     bajando_pendiente
+                 0,857    0,643    0,250      0,857    0,387      0,185    0,624     0,394     caminando
+                 0,000    0,060    0,000      0,000    0,000      -0,112   0,427     0,182     subiendo_escaleras
+                 0,000    0,107    0,000      0,000    0,000      -0,153   0,504     0,209     subiendo_pendiente
+Weighted Avg.    0,200    0,200    0,112      0,200    0,117      -0,030   0,493     0,239     
+
+=== Confusion Matrix ===
+
+  a  b  c  d  e   <-- classified as
+  2  3 14  1  1 |  a = bajando_escaleras
+  3  1 12  2  3 |  b = bajando_pendiente
+  0  0 18  0  3 |  c = caminando
+  2  3 14  0  2 |  d = subiendo_escaleras
+  3  2 14  2  0 |  e = subiendo_pendiente
+
